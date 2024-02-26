@@ -21,7 +21,7 @@
     <menuitem
         id="sport_issue_menu"
         name="Sport Issues"
-        action="sale.action_sport_issue"
+        action="sports_association_nacho.action_sport_issue"
         parent="sports_association_nacho.sport_menu"
         sequence="10"/>
 
