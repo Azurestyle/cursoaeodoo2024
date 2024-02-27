@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-sports_association_nacho.access_sport_issue,access_sport_issue,sports_association_nacho.model_sport_issue,base.group_user,1,1,1,1
+sports_association_nacho.access_sport_issue,access_sport_issue,sports_association_nacho.model_sport_issue,group_sports_association_manager,1,1,1,1
+sports_association_nacho.access_sport_issue,access_sport_issue,sports_association_nacho.model_sport_issue,group_sports_association_user,1,1,0,0

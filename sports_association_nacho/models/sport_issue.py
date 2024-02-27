@@ -8,6 +8,7 @@ class SportIssue(models.Model):
     description = fields.Text(string='Description')
     date = fields.Date(string='Date')
     assistance = fields.Boolean(string='Assistance', help='Show if the issue has assistance')
+    user_id = fields.Many2one('res.users', string='Responsable')
     state = fields.Selection(
         [('draft', 'Draft'),
          ('open', 'Open'),
