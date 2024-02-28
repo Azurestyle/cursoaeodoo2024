@@ -21,4 +21,18 @@
         parent="sports_association_nacho.sport_menu"
         sequence="20"/>
 
+    <!-- <menuitem
+        id="sport_license_menu"
+        name="Sport Licenses"
+        action="sports_association_nacho.action_sport_license"
+        parent="sports_association_nacho.sport_menu"
+        sequence="30"/> -->
+
+    <menuitem
+        id="sport_issue_tag_menu"
+        name="Sport Issue Tags"
+        action="sports_association_nacho.sport_issue_tag_action"
+        parent="sports_association_nacho.sport_menu"
+        sequence="40"/>
+
 </odoo>
