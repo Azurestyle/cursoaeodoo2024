@@ -34,9 +34,11 @@
                                 <tree editable="bottom">
                                     <field name="name" />
                                     <field name="date" />
-                                    <field name="assistance"/>
+                                    <field name="assistance" widget="boolean_toggle"/>
                                 </tree>
-                                </field>
+                            
+                           </field>
+                             
                         </page>
                     </notebook>
                 </sheet>
