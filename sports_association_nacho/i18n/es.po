@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 17.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-02-28 16:57+0000\n"
-"PO-Revision-Date: 2024-02-28 16:57+0000\n"
+"POT-Creation-Date: 2024-02-29 17:13+0000\n"
+"PO-Revision-Date: 2024-02-29 17:13+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -32,6 +32,16 @@ msgid ""
 msgstr ""
 
 #. module: sports_association_nacho
+#: model:sport.issue.tag,name:sports_association_nacho.sport_issue_tag_data_2
+msgid "Accident"
+msgstr "Accidente"
+
+#. module: sports_association_nacho
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_player__age
+msgid "Age"
+msgstr "Edad"
+
+#. module: sports_association_nacho
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue__assistance
 msgid "Assistance"
 msgstr "Asistencia"
@@ -53,21 +63,49 @@ msgid "Clinics"
 msgstr "Clínicas"
 
 #. module: sports_association_nacho
+#: model:sport.issue.tag,name:sports_association_nacho.sport_issue_tag_data_4
+msgid "Cramp"
+msgstr "Calambre"
+
+#. module: sports_association_nacho
+#: model_terms:ir.actions.act_window,help:sports_association_nacho.sport_license_action
+msgid "Create a new license"
+msgstr "Crear una nueva licencia"
+
+#. module: sports_association_nacho
+#: model_terms:ir.actions.act_window,help:sports_association_nacho.sport_sport_action
+msgid "Create a new sport"
+msgstr "Crea un nuevo deporte"
+
+#. module: sports_association_nacho
 #: model_terms:ir.actions.act_window,help:sports_association_nacho.action_sport_clinic
 #: model_terms:ir.actions.act_window,help:sports_association_nacho.action_sport_issue
 msgid "Create a new sport issue"
-msgstr ""
+msgstr "Crea una nueva incidencia"
+
+#. module: sports_association_nacho
+#: model_terms:ir.actions.act_window,help:sports_association_nacho.sport_player_action
+msgid "Create a new sport player"
+msgstr "Crea un nuevo jugador"
+
+#. module: sports_association_nacho
+#: model_terms:ir.actions.act_window,help:sports_association_nacho.sport_team_action
+msgid "Create a new sport team"
+msgstr "Crea un nuevo equipo"
 
 #. module: sports_association_nacho
 #: model_terms:ir.actions.act_window,help:sports_association_nacho.sport_issue_tag_action
 msgid "Create a new tag"
-msgstr ""
+msgstr "Crea una nueva etiqueta"
 
 #. module: sports_association_nacho
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_clinic__create_uid
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue__create_uid
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue_tag__create_uid
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_license__create_uid
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_player__create_uid
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_sport__create_uid
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_team__create_uid
 msgid "Created by"
 msgstr ""
 
@@ -76,6 +114,9 @@ msgstr ""
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue__create_date
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue_tag__create_date
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_license__create_date
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_player__create_date
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_sport__create_date
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_team__create_date
 msgid "Created on"
 msgstr ""
 
@@ -86,6 +127,7 @@ msgstr "Fecha"
 
 #. module: sports_association_nacho
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue__description
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_sport__description
 #: model_terms:ir.ui.view,arch_db:sports_association_nacho.sport_issue_view_form
 msgid "Description"
 msgstr "Descripción"
@@ -95,6 +137,9 @@ msgstr "Descripción"
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue__display_name
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue_tag__display_name
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_license__display_name
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_player__display_name
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_sport__display_name
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_team__display_name
 msgid "Display Name"
 msgstr ""
 
@@ -115,15 +160,34 @@ msgid "End Date"
 msgstr "Fecha fin"
 
 #. module: sports_association_nacho
+#: model:sport.issue.tag,name:sports_association_nacho.sport_issue_tag_data_3
+msgid "Fatigue"
+msgstr "Fatiga"
+
+#. module: sports_association_nacho
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_clinic__id
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue__id
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue_tag__id
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_license__id
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_player__id
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_sport__id
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_team__id
 msgid "ID"
 msgstr ""
 
 #. module: sports_association_nacho
+#: model:sport.issue.tag,name:sports_association_nacho.sport_issue_tag_data_1
+msgid "Injury"
+msgstr "Herida"
+
+#. module: sports_association_nacho
+#: model:ir.ui.menu,name:sports_association_nacho.sport_issue_management_menu
+msgid "Issue Management"
+msgstr "Administrar incidencias"
+
+#. module: sports_association_nacho
 #: model_terms:ir.ui.view,arch_db:sports_association_nacho.sport_issue_view_form
+#: model_terms:ir.ui.view,arch_db:sports_association_nacho.sport_team_view_form
 msgid "Issue Name"
 msgstr "Nombre"
 
@@ -140,6 +204,9 @@ msgstr "Incidencias"
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue__write_uid
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue_tag__write_uid
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_license__write_uid
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_player__write_uid
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_sport__write_uid
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_team__write_uid
 msgid "Last Updated by"
 msgstr ""
 
@@ -148,7 +215,20 @@ msgstr ""
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue__write_date
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue_tag__write_date
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_license__write_date
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_player__write_date
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_sport__write_date
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_team__write_date
 msgid "Last Updated on"
+msgstr ""
+
+#. module: sports_association_nacho
+#: model_terms:ir.ui.view,arch_db:sports_association_nacho.sport_license_view_tree
+msgid "License"
+msgstr "Licencia"
+
+#. module: sports_association_nacho
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_team__logo
+msgid "Logo"
 msgstr ""
 
 #. module: sports_association_nacho
@@ -157,10 +237,28 @@ msgid "Manager"
 msgstr ""
 
 #. module: sports_association_nacho
+#: model_terms:ir.ui.view,arch_db:sports_association_nacho.sport_team_view_form
+msgid "Mark players starters"
+msgstr "Marcar todos titulares"
+
+#. module: sports_association_nacho
+#: model_terms:ir.ui.view,arch_db:sports_association_nacho.sport_team_view_form
+msgid "Mark players substitutes"
+msgstr "Marcar todos sustitutos"
+
+#. module: sports_association_nacho
+#: model:sport.issue.tag,name:sports_association_nacho.sport_issue_tag_data_5
+msgid "Muscle Strain"
+msgstr "Desgarro muscular"
+
+#. module: sports_association_nacho
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_clinic__name
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue__name
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue_tag__name
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_license__name
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_player__name
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_sport__name
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_team__name
 msgid "Name"
 msgstr "Nombre"
 
@@ -173,6 +271,23 @@ msgstr "Abierta"
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_license__partner_id
 msgid "Partner"
 msgstr "Contacto"
+
+#. module: sports_association_nacho
+#: model_terms:ir.ui.view,arch_db:sports_association_nacho.sport_player_view_form
+msgid "Player"
+msgstr "Jugador"
+
+#. module: sports_association_nacho
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_team__player_ids
+#: model_terms:ir.ui.view,arch_db:sports_association_nacho.sport_player_view_tree
+#: model_terms:ir.ui.view,arch_db:sports_association_nacho.sport_team_view_form
+msgid "Players"
+msgstr "Jugadores"
+
+#. module: sports_association_nacho
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_player__position
+msgid "Position"
+msgstr "Posición"
 
 #. module: sports_association_nacho
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue__sequence
@@ -189,6 +304,16 @@ msgstr "Muestra si la incidencia tiene asistencia"
 #: model_terms:ir.ui.view,arch_db:sports_association_nacho.sport_issue_view_form
 msgid "Solution"
 msgstr "Solución"
+
+#. module: sports_association_nacho
+#: model:ir.actions.act_window,name:sports_association_nacho.sport_sport_action
+#: model:ir.model,name:sports_association_nacho.model_sport_sport
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_team__sport_id
+#: model:ir.ui.menu,name:sports_association_nacho.sport_sport_menu
+#: model_terms:ir.ui.view,arch_db:sports_association_nacho.sport_sport_view_form
+#: model_terms:ir.ui.view,arch_db:sports_association_nacho.sport_sport_view_tree
+msgid "Sport"
+msgstr "Deporte"
 
 #. module: sports_association_nacho
 #: model:ir.ui.menu,name:sports_association_nacho.sport_menu
@@ -233,9 +358,38 @@ msgid "Sport Issues"
 msgstr "Incidencias"
 
 #. module: sports_association_nacho
+#: model:ir.actions.act_window,name:sports_association_nacho.sport_license_action
 #: model:ir.model,name:sports_association_nacho.model_sport_license
 msgid "Sport License"
 msgstr "Licencia"
+
+#. module: sports_association_nacho
+#: model:ir.ui.menu,name:sports_association_nacho.sport_license_menu
+msgid "Sport Licenses"
+msgstr "Licencias"
+
+#. module: sports_association_nacho
+#: model:ir.ui.menu,name:sports_association_nacho.sport_sport_management_menu
+msgid "Sport Management"
+msgstr "Gestión deportiva"
+
+#. module: sports_association_nacho
+#: model:ir.actions.act_window,name:sports_association_nacho.sport_player_action
+#: model:ir.model,name:sports_association_nacho.model_sport_player
+msgid "Sport Player"
+msgstr "Jugador"
+
+#. module: sports_association_nacho
+#: model:ir.ui.menu,name:sports_association_nacho.sport_player_menu
+msgid "Sport Players"
+msgstr "Jugadores"
+
+#. module: sports_association_nacho
+#: model:ir.actions.act_window,name:sports_association_nacho.sport_team_action
+#: model:ir.model,name:sports_association_nacho.model_sport_team
+#: model:ir.ui.menu,name:sports_association_nacho.sport_team_menu
+msgid "Sport Team"
+msgstr "Equipo"
 
 #. module: sports_association_nacho
 #: model:ir.module.category,name:sports_association_nacho.ir_module_sports_association
@@ -243,9 +397,19 @@ msgid "Sports Association"
 msgstr "Asociación de deportes"
 
 #. module: sports_association_nacho
+#: model:sport.issue.tag,name:sports_association_nacho.sport_issue_tag_data_6
+msgid "Sprain"
+msgstr "Esguince"
+
+#. module: sports_association_nacho
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_license__start_date
 msgid "Start Date"
 msgstr "Fecha inicio"
+
+#. module: sports_association_nacho
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_player__starter
+msgid "Starter"
+msgstr "Titular"
 
 #. module: sports_association_nacho
 #: model:ir.model.fields,field_description:sports_association_nacho.field_sport_issue__state
@@ -257,6 +421,13 @@ msgstr "Estado"
 #: model_terms:ir.ui.view,arch_db:sports_association_nacho.sport_issue_tags_view_tree
 msgid "Tags"
 msgstr "Etiquetas"
+
+#. module: sports_association_nacho
+#: model:ir.model.fields,field_description:sports_association_nacho.field_sport_player__team_id
+#: model_terms:ir.ui.view,arch_db:sports_association_nacho.sport_team_view_form
+#: model_terms:ir.ui.view,arch_db:sports_association_nacho.sport_team_view_tree
+msgid "Team"
+msgstr "Equipo"
 
 #. module: sports_association_nacho
 #: model_terms:ir.ui.view,arch_db:sports_association_nacho.sport_issue_view_form
