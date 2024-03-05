@@ -20,6 +20,7 @@
                 <header>
                     <button string="Mark players starters" name="action_make_all_starters" type="object" class="btn-success"/>
                     <button string="Mark players substitutes" name="action_make_all_substitutes" type="object" class="btn-danger"/>
+                    <button string="Add free players" name="action_add_players" type="object" class="btn-warning"/>
                    
                 </header>
                 <sheet>
@@ -34,6 +35,7 @@
                     <group>
                        
                         <field name="sport_id" />
+                        <field name="player_count" />
                     </group>
                     
                 
