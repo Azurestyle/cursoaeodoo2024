@@ -29,6 +29,8 @@ class SportIssue(models.Model):
 
     user_phone = fields.Char('user_phone',related='user_id.phone',store=True,readonly=False)
 
+    action_ids = fields.One2many('sport.issue.action', 'issue_id', string='Actions to do')
+
     @api.depends('user_id')
     def _compute_assigned(self):
         for record in self:
@@ -74,4 +76,5 @@ class SportIssue(models.Model):
                  # record.tag_ids = [(6, 0, tag_ids.ids)]
             else:
                 record.tag_ids = [Command.create({'name': record.name})]
+                record.tag_ids
                # record.tag_ids = [(0, 0, {'name': record.name})]

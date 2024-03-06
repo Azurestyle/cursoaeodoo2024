@@ -42,7 +42,10 @@
                         
                     <notebook>
                         <page name="players" string="Players">
-                            <field name="player_ids">
+                            <!-- <field name="player_ids" context="{'tree_view_ref':'sports_association_nacho.sport_player_view_simple_tree',
+                                                               'form_view_ref':'sports_association_nacho.sport_player_view_simple_form'}">
+                                                            </field> -->
+                            <field name="player_ids" context="{'default':name}">
                                 <tree editable="bottom">
                                     <field name="name" />
                                     <field name="age" />
@@ -50,6 +53,7 @@
                                     <field name="starter" widget="boolean_toggle" />
                                     </tree>
                                 </field>
+                                
                         </page>
                     </notebook>
                 </sheet>
