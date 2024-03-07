@@ -10,7 +10,7 @@ class SportPlayer(models.Model):
     age = fields.Integer('Age', compute='_compute_age', store=True)
     starter = fields.Boolean('Starter')
     position = fields.Char('Position')
-    sport_name = fields.Char('Sport', related='team_id.sport_id.name')
+    sport_name = fields.Char('Sport', related='team_id.sport_id.name', store=True)
 
     def action_make_starter(self):
         self.starter = True
