@@ -28,6 +28,15 @@ class SportTeam(models.Model):
             players = self.env['sport.player'].search([('team_id', '=', False), ('age', '<', 30)])
             players |= record.player_ids
             record.player_ids = [Command.set(players.ids)]
+    
+    def action_view_players(self):
+        return {
+            'name': 'Players',
+            'type': 'ir.actions.act_window',
+            'res_model': 'sport.player',
+            'view_mode': 'tree,form',
+            'domain': [('team_id', '=', self.id)],
+        }
             
     # Otra opción para el método action_add_players
 
