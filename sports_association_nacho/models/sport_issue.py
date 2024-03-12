@@ -8,7 +8,7 @@ class SportIssue(models.Model):
     # def _get_default_user(self):
     #     return self.env.user
 
-    name = fields.Char(string='Name', required=True)
+    name = fields.Char(string='Name', required=True, copy=False)
     description = fields.Text(string='Description')
     date = fields.Date(string='Date', default=fields.Date.today)
     assistance = fields.Boolean(string='Assistance', help='Show if the issue has assistance')
@@ -26,7 +26,7 @@ class SportIssue(models.Model):
     solution = fields.Html('Solution')
     assigned = fields.Boolean('Assigned', compute='_compute_assigned', inverse='_inverse_assigned', store=True)
     clinic_id = fields.Many2one('sport.clinic', string='Clinic')
-
+    player_id = fields.Many2one('sport.player', string='Player')
     tag_ids = fields.Many2many('sport.issue.tag', string='Tags')
 
     cost = fields.Float('Cost')
