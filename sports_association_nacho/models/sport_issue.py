@@ -39,6 +39,9 @@ class SportIssue(models.Model):
         ('name_uniq', 'unique (name)', "The name must be unique!"),
     ]
 
+    def get_name(self):
+        import pdb;pdb.set_trace()
+
     @api.constrains('cost')
     def _check_cost(self):
         for record in self:
