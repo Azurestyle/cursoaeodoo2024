@@ -14,6 +14,7 @@
     ],
     
     "data": [
+             "wizards/sport_create_match.xml",
              "data/sport_license_data.xml",
              "data/sport_issue_tag_data.xml",
              "data/ir_cron.xml",
@@ -31,8 +32,10 @@
              "views/sport_menuitems.xml",
              "wizards/sport_create_issue.xml",
              "wizards/sport_issue_state.xml",
+             
              "report/sport_issue_report.xml",
              "report/sport_league_report.xml",
+             "report/sport_match_report.xml",
 
              ],
 }

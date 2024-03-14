@@ -9,6 +9,22 @@ class SportLeague(models.Model):
     end_date = fields.Date('End Date')
     sport_id = fields.Many2one('sport.sport', string='Sport')
     sport_league_ids = fields.One2many('sport.league.line', 'league_id', string='League Lines')
+    match_ids = fields.One2many('sport.match', 'league_id', string='Matches')
+    match_count = fields.Integer('Match Count', compute='_compute_match_count')
+
+    # _sql_constraints = [
+    #     ('start_date_greater', 'check(start_date > end_date)', "The league start date must be before its end date.")
+    # ]
+
+    def _compute_match_count(self):
+        for record in self:
+            record.match_count = len(record.match_ids)
+
+    @api.constrains('start_date', 'end_date')
+    def _check_dates(self):
+        for record in self:
+            if record.start_date > record.end_date:
+                raise models.ValidationError('The league start date must be before its end date.')
 
     def set_score(self):
         for record in self.sport_league_ids:
@@ -19,6 +35,18 @@ class SportLeague(models.Model):
     def _cron_set_score(self):
         leagues = self.search([])
         leagues.set_score()
+    
+    def action_view_match(self):
+        # action = self.env.ref('sports_association_nacho.action_sport_match').read()[0]
+        # action['domain'] = [('league_id', '=', self.id)]
+        # return action
+        return {
+            'name': 'Matches',
+            'type': 'ir.actions.act_window',
+            'res_model': 'sport.match',
+            'view_mode': 'tree,form',
+            'domain': [('league_id', '=', self.id)],
+        }
 
 
 class SportLeagueLine(models.Model):
