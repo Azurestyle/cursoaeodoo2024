@@ -9,7 +9,6 @@ class SportCreateIssue(models.TransientModel):
     player_id = fields.Many2one('sport.player', string='Player')
     
     def create_issue(self):
-        import pdb;pdb.set_trace()
         vals = {
             'name': self.name,
             'clinic_id': self.clinic_id.id,
