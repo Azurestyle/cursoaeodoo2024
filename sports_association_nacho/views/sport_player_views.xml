@@ -42,6 +42,11 @@
                             <field name="birthdate" />
                             <field name="age" />
                             <field name="position" />
+                            <field name="street"/>
+                            <field name="city"/>
+                            <field name="country_id"/>
+                            <field name="zip"/>
+                            
                         </group>
                         <group>
                             <field name="team_id" domain="[('sport_id', '!=', False)]"/>
