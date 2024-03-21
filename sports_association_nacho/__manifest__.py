@@ -10,7 +10,7 @@
     "application": False,
     "installable": True,
     "depends": [
-        "web", 
+        "web", "portal"
     ],
     
     "data": [

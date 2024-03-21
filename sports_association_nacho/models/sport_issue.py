@@ -4,6 +4,7 @@ from odoo.exceptions import ValidationError, UserError
 class SportIssue(models.Model):
     _name = 'sport.issue'
     _description = 'Sport Issue'
+    _inherit = ['portal.mixin', 'mail.thread', 'mail.activity.mixin']
 
     # def _get_default_user(self):
     #     return self.env.user
@@ -18,6 +19,7 @@ class SportIssue(models.Model):
          ('done', 'Done')],
         string='State',
         default='draft',
+        tracking=True
     )
 
     color = fields.Integer(string='Color', default=0)
@@ -94,6 +96,8 @@ class SportIssue(models.Model):
             if not record.date:
                 raise UserError(_('The date is required'))
             record.state = 'done'
+            msg_body = f'La incidencia ha pasado al estado {record.state} con fecha {record.date}'
+            record.message_post(body=msg_body)
             # record.write({'tag_ids': [(0,0,{'name': 'ETIQUETA PRUEBA'})]
             # })
             # record.tag_ids = [(0,0,{'name': 'ETIQUETA PRUEBA'})]
