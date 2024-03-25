@@ -6,6 +6,7 @@
         <field name="model">sport.player</field>
         <field name="arch" type="xml">
             <tree string="Players">
+                
                 <field name="name" />
                 <field name="age" />
                 <field name="position" />
@@ -38,6 +39,7 @@
                 <sheet>
                     <group>
                         <group>
+                            <field name="active" invisible="1" />
                             <field name="name" />
                             <field name="birthdate" />
                             <field name="age" />
